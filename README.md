@@ -1,3 +1,28 @@
+# Artifact Validation
+## SCS Lab - Generate SBOM and SLSA
+1. Add the "SBOM Orchestration" step
+
+
+| Input           | Value           | Notes |
+| --------------- | --------------- | ----- |
+| Name      |SBOM Orchestration|       |
+| Provider  |Docker Registry |  Use **Third-Party**     |
+|Image | nikpap/harness-workshop:<+variable.username>-1 |     |
+| Private Key  |SBOM Private Key |      |
+|Password | SBOM Password |     |
+
+
+## SCS Lab - Sign Artifact
+1. Add the "Artifact signature" step
+   
+| Input           | Value           | Notes |
+| --------------- | --------------- | ----- |
+| Stage Name      |Build|       |
+| Clone Codebase  |Enabled|       |
+| Repository Name |harnessrepo|       |
+
+
+
 # Service Now
 
 ### Prerequisites
