@@ -57,6 +57,18 @@
 
 
 
+## SCS Lab - Explore your SBOMs
+1. Navigate to the SCS Module in Harness
+2. Navigate to the "Artifacts" in the sidebar.
+3. You should see your Artifact, select that artifact
+4. Select the latest version of that Artifact at the top
+5. This is the overview for this particular artifact. While it's pretty empty now, as you build our more checks and governance into your supply chain it will populate with even more information.
+
+<img width="1653" height="802" alt="image" src="https://github.com/user-attachments/assets/0830b72d-2ca5-4c9a-a97f-63832d7a3dc0" />
+
+
+
+
 # Service Now
 
 ### Prerequisites
