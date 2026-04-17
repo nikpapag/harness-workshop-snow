@@ -13,13 +13,47 @@
 
 
 ## SCS Lab - Sign Artifact
-1. Add the "Artifact signature" step
+1. Add the "Artifact Signing" step
    
 | Input           | Value           | Notes |
 | --------------- | --------------- | ----- |
-| Stage Name      |Build|       |
-| Clone Codebase  |Enabled|       |
-| Repository Name |harnessrepo|       |
+| Name      |SBOM Orchestration|       |
+| Provider  |Docker Registry |  Use **Third-Party**     |
+|Image | nikpap/harness-workshop:<+variable.username>-1 |     |
+| Private Key  |SBOM Private Key |      |
+|Password | SBOM Password |     |
+
+
+## SCS Lab - Verify the signature
+
+1. Navigate to the frontend stage
+2. Add a step group before every other step
+
+<img width="238" height="185" alt="image" src="https://github.com/user-attachments/assets/904ba67f-778a-4bf1-b763-e9d69be71244" />
+
+
+
+3. Name **Artifact Validation**
+4. **Enable container based execution**
+5. Select the k8s cluster
+6. Expand optional configuration
+
+| Input           | Value           | Notes |
+| --------------- | --------------- | ----- |
+| Namespace      |{{Organisation ID}}-ns|       |
+   
+7. **Apply Changes**
+
+8. Within the step group add step and select **Artifact Verification**
+9. Configure accordingly 
+
+
+| Input           | Value           | Notes |
+| --------------- | --------------- | ----- |
+| Name      |Artifact Verification|       |
+| Provider  |Docker Registry |  Use **Third-Party**     |
+|Image | nikpap/harness-workshop:<+variable.username>-1 |     |
+| Public Key  |SBOM Public Key |      |
 
 
 
