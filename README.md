@@ -1,3 +1,9 @@
+# Service Now
+
+### Prerequisites
+
+**1.** In the pipeline create a new variable **backend_version** and give it a value of v1
+
 ### Approvals via ServiceNow Change Requests
 
 **1.** Hover before the **frontend** stage and click on the **+** icon that appears to add a new stage.
