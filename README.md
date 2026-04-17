@@ -40,7 +40,7 @@
 
 | Input           | Value           | Notes |
 | --------------- | --------------- | ----- |
-| Namespace      |{{Organisation ID}}-ns|       |
+| Namespace      |{{lab id}}-ns| **Ask the instructor for more details** |
    
 7. **Apply Changes**
 
